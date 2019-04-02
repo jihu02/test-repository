@@ -1,0 +1,35 @@
+mkdir tutorial
+; tutorial  이라는 폴더 생성
+
+cd tutorial
+; 폴더 이동
+
+git init
+; 저장소에 GIT 사용에 필요한 정보를 담을 .git 폴더를 생성하고 초기 필요한 작업 수행 
+
+git status
+저장소의 상태를 확인한다.
+새로운 파일이 있으면 untracked
+변경되었으나 커밋되지 않았으면 new file 로 확인
+없으면 clean 등의 메시지로 확인
+
+git add 파일이름
+새로 작업하거나 / 수정한 파일을 index 에 등록
+파일이름에 . 을 입력하면 모든파일 등록
+
+git commit -m "메시지"
+index에 등록된후 commit 안된 파일을 commit 
+-m “메시지” 각 버젼별로 변경사항을 알아 볼수 있게 msg 입력
+
+git log
+commit log  확인 / 각 버젼은 40자리의 hash 값으로 구분
+시간순 저장 
+
+git remote add origin 원격 저장소의 주소
+
+git hub의 원격저장소 주소등록
+
+git push -u origin master
+
+마스터 branch로 push
+최초 push  할 경우 github의 사용자 id/passwd 입력필요
